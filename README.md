@@ -8,7 +8,7 @@ Para empezar el primer entregable, hay que activar el **modo desarrollador** en 
 
 Ahora hago este documento mío, es decir, lo convierto a **español** y **comento** lo que hace para que sea más legible y entenderlo a la perfección.
 
-Al investigar un poco sobre la estructura, instrucciones, datos y demás de este código, voy a hacer un breve análisis de las diferentes instrucciones que se utilizan:
+Al investigar un poco sobre la estructura, instrucciones, datos y demás de este código, voy a hacer un breve análisis de las diferentes directivas o instrucciones de plantilla del motor QWeb que se utilizan:
 - Directivas de iteración (t-foreach)  
 - Condición (t-if)  
 - Directiva de campos (t-field)
@@ -23,7 +23,7 @@ La directiva **t-if** controla si un bloque se muestra o no dependiendo de si un
 
 
 En este otro ejemplo podemos ver directivas de campos. 
-La directiva **t-field** es la encargada de mostrar en el PDF el valor real de un campo del registro de Odoo, sustituyendo en tiempo de ejecución cualquier valor de previsualización que aparezca en el XML. En la imagén anterior hemos podemos ver que se hace uso de **t-out,** una directiva algo similar a t-field pero se usa cuando el dato no viene directamente de un campo ORM, sino de una expresión o diccionario Python, como **payment\_vals\['amount'\]**.. Aquí muestro el ejemplo en la siguiente imagen:  
+La directiva **t-field** es la encargada de mostrar en el PDF el valor real de un campo del registro de Odoo, sustituyendo en tiempo de ejecución cualquier valor de previsualización que aparezca en el XML. En la imagén anterior hemos podemos ver que se hace uso de **t-out,** una directiva algo similar a t-field pero se usa cuando el dato no viene directamente de un campo ORM, sino de una expresión o diccionario Python, como **payment\_vals\['amount'\]**. Aquí muestro el ejemplo en la siguiente imagen:  
 
 <img width="776" height="635" alt="image" src="https://github.com/user-attachments/assets/c1b661e9-000e-410d-927d-e0b1ba189208" />
 
