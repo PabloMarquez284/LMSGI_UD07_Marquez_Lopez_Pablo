@@ -17,10 +17,10 @@
                                 <address class="mb-0" t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
                                 <div t-if="o.partner_id.vat" id="partner_vat_address_not_same_as_shipping">
                                     <t t-if="o.company_id.account_fiscal_country_id.vat_label" t-out="o.company_id.account_fiscal_country_id.vat_label" id="inv_tax_id_label"/>
-                                    <t t-else="">Tax ID</t>: <span t-field="o.partner_id.vat"/>
+                                    <t t-else="">Identificación fiscal</t>: <span t-field="o.partner_id.vat"/>
                                 </div>
                                 <div t-if="o.partner_id.country_code == 'MA' and o.partner_id.company_registry">
-                                    ICE: <a t-field="o.partner_id.company_registry"/>
+                                    Servicio de Inmigración y Control de Aduanas: <a t-field="o.partner_id.company_registry"/>
                                 </div>
                             </t>
                         </div>
